@@ -14,7 +14,7 @@ build:
 	cmake --build build
 
 test: configure-debug build
-	ctest --test-dir build/test
+	ctest --test-dir build/test --output-on-failure
 
 clean:
 	cmake --build build --target clean
